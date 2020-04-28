@@ -1,0 +1,25 @@
+#conteudo {
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+    /*Propriedades do flex*/
+    /*Direção do fluxo
+    Se é em linhas ou colunas, ambas podem ser configuradas ao contrário*/
+    /*Padrão: row*/
+    flex-direction: row;
+    /*Define se haverá quebra de linha ou não*/
+    /*Padrão: nowrap*/
+    flex-wrap: wrap;
+    /*Define como o conteúdo será ajustado*/
+    /*Padrão: start*/
+    justify-content: space-between;
+    /*Alinhamento de itens*/
+    /*Padrão: stretch*/
+    align-items: baseline; /*Baseline ajusta os itens de acordo com a linha base do texto do primeiro item*/
+}
+.item {
+    
+    background: white;
+    margin: 10px;
+    border: 1px solid gray;
+}
