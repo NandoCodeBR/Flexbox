@@ -1,25 +1,77 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 #conteudo {
     background: #dcdcdc;
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    /*Propriedades do flex*/
+    /*Propriedades do flex
     /*Direção do fluxo
     Se é em linhas ou colunas, ambas podem ser configuradas ao contrário*/
-    /*Padrão: row*/
+    /*Padrão: row
     flex-direction: row;
     /*Define se haverá quebra de linha ou não*/
-    /*Padrão: nowrap*/
+    /*Padrão: nowrap
     flex-wrap: wrap;
     /*Define como o conteúdo será ajustado*/
-    /*Padrão: start*/
+    /*Padrão: start
     justify-content: space-between;
     /*Alinhamento de itens*/
-    /*Padrão: stretch*/
-    align-items: baseline; /*Baseline ajusta os itens de acordo com a linha base do texto do primeiro item*/
+    /*Padrão: stretch
+    align-items: baseline; Baseline ajusta os itens de acordo com a linha base do texto do primeiro item*/
 }
 .item {
-    
+    /*width: 100px; */
+    height: 100px;
     background: white;
     margin: 10px;
     border: 1px solid gray;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    /*Define a proporção de espaço determinado por um item
+    Padrão é 0*/
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    /*Defube a proporção de redução de espaço determinado por um item
+    Padrão é 0*/
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+    /*Define um espaço para o flex item antes de distribuir o espaço restante */
+}
+
+
+.ordemneg {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; /*O padrão é 0, mas caso seja negativo, o negativo vai aparecer primeiro*/
+}
+.ordem1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+}
+.ordem2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+}
+.ordem3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+}
+.ordem4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+}
+.ordem5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
 }
